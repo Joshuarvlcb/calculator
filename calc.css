@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(138, 101, 223, 0.733),
+    rgba(226, 103, 150, 0.746)
+  );
+}
+.flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc-con {
+  height: 700px;
+  width: 360px;
+  background-color: #e3deda;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 4px 4px 8px #000000;
+}
+.stripes-con {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 10000;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.stripes-con .stripes-box {
+  width: 50px;
+  height: 80px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.stripes-con .stripes-box .stripe1 {
+  height: 100%;
+  width: 12px;
+  background-color: #e54d3f;
+}
+.stripes-con .stripes-box .stripe2 {
+  height: 100%;
+  width: 12px;
+  background-color: #e7c22c;
+}
+.stripes-con .stripes-box .stripe3 {
+  height: 100%;
+  width: 12px;
+  background-color: #216fb1;
+}
+.flex-con {
+  position: absolute;
+  bottom: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.calculator-grid {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 65px);
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 10px;
+  background-color: #b4a8a0;
+  border-radius: 10px;
+}
+.calculator-grid > button {
+  display: flex;
+  align-self: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 8px solid #e5d9cb;
+  outline: white;
+  outline: none;
+  background-color: #f5f0eb;
+  color: #bf7048;
+  border-radius: 5px;
+}
+.calculator-grid > button:hover {
+  background-color: rgba(253, 176, 243, 0.575);
+}
+.ac {
+  grid-column: 1/3;
+}
+.output-con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.output {
+  height: 140px;
+  width: 320px;
+  border: solid 7px black;
+  background-color: #bfbfa2;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 10px;
+}
+
+.output .previous-operand {
+  color: #9d9798;
+  font-size: 1.1rem;
+}
+.output .current-operand {
+  color: rgb(0, 0, 0);
+  font-size: 2.1rem;
+}
+.zero {
+  grid-column: 1/3;
+}
+button.equal {
+  border-color: #8a8192;
+  color: white;
+  background-color: #a49daa;
+}

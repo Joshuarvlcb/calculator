@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Joshua Ruvalcaba" />
+    <meta name='description content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:decription" content="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+    <link rel='shortcut icon' href=' type='image/x-icon'>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="calc-con">
+        <div class="stripes-con">
+          <div class="stripes-box">
+            <div class="stripe1"></div>
+            <div class="stripe2"></div>
+            <div class="stripe3"></div>
+          </div>
+          <div class="output-con">
+            <div class="output">
+              <div data-current-operand class="current-operand"></div>
+              <div data-previous-operand class="previous-operand"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-con">
+          <div class="calculator-grid">
+            <button data-all-clear class="ac">AC</button>
+            <button data-delete>
+              <span class="material-icons-outlined"> backspace </span>
+            </button>
+            <button data-operation>/</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number class="zero">0</button>
+            <button data-number>.</button>
+            <button data-equals class="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./calc.js"></script>
+  </body>
+</html>
