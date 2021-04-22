@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 .calc-con {
-  height: 700px;
+  height: 600px;
   width: 360px;
   background-color: #e3deda;
   border-radius: 30px;
@@ -86,7 +86,7 @@ body {
 }
 .flex-con {
   position: absolute;
-  bottom: 55px;
+  bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -103,7 +103,7 @@ body {
 .calculator-grid > button {
   display: flex;
   align-self: center;
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@ body {
   justify-content: center;
 }
 .output {
-  height: 140px;
+  height: 110px;
   width: 320px;
   border: solid 7px black;
   background-color: #bfbfa2;
